@@ -248,7 +248,8 @@ export function UserForm({user, userType, parentId, securityProfileAssignments =
         "ProductFacetReader",
         "SupplierAddressReader",
         "SupplierReader",
-        "BuyerUserAdmin"
+        "BuyerUserAdmin",
+        "ApprovalRuleAdmin"
       ]
     } as ImpersonateTokenRequest
     const token = await Users.GetAccessToken(buyerID, userID, tokenRequest)
